@@ -483,6 +483,18 @@
   justify-content: space-between;
 }
 
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
 .align-items-center {
   align-items: center;
 }
