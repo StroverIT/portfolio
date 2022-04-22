@@ -11,7 +11,7 @@ import "./index.css"
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Header />
       <Nav />
       <About />
@@ -21,7 +21,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

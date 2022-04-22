@@ -1,1 +1,9 @@
-@use "./abstracts/colors" as *;
+
+// ------Abstracts ----
+@use "./abstracts/colors";
+@use "./abstracts/breakpoints" ;
+@use "./abstracts/grid" ;
+@use "./abstracts/utils" ;
+
+// ---- Base ---
+@use "./base/reset";
