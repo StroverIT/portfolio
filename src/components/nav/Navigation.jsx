@@ -8,11 +8,11 @@ const Navigation = () => {
                 <div>
                 <img src="logo" alt="logo" />
                 </div>
-                <div className="d-flex ">
+                <div className="d-flex nav-links">
                     <ul className="d-flex flex-column flex-md-row align-items-center">
-                        <li> <span className="primary-color">01.</span> About</li>
-                        <li> <span className="primary-color">02.</span> Work</li>
-                        <li> <span className="primary-color">03.</span> Contact</li>
+                        <li className="secondary-color"> <span className="primary-color">01.</span> About</li>
+                        <li className="secondary-color"> <span className="primary-color">02.</span> Work</li>
+                        <li className="secondary-color"> <span className="primary-color">03.</span> Contact</li>
                         <li className="btn">
                            Resume
                         </li>
@@ -20,7 +20,7 @@ const Navigation = () => {
                 </div>
             </section>
             <section>
-                <div className="navSticky">
+                <div className="navSticky nav-social">
                     <div>Git Icon</div>
                     <div>Instagram Icon</div>
                 </div>
