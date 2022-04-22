@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.primary-color {
+  color: #5ADBFF;
+}
+
+.btn {
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  border: 1px solid #5ADBFF;
+  color: #5ADBFF;
+}
+
 @media (min-width: 0) {
   .col-xs-1 {
     box-sizing: border-box;
@@ -441,7 +454,7 @@
 }
 
 .container-fluid {
-  width: min(100% - 2rem, 1400px);
+  width: min(100% - 2rem, 1200px);
   margin-inline: auto;
 }
 
@@ -460,6 +473,14 @@
 
 .justify-content-center {
   justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 @media (min-width: 0) {
@@ -552,15 +573,13 @@
 
 @media (min-width: 0) {
   .flex-xs-column {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 0) {
   .flex-xs-row {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: row;
   }
 }
 
@@ -654,15 +673,13 @@
 
 @media (min-width: 480px) {
   .flex-sm-column {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 480px) {
   .flex-sm-row {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: row;
   }
 }
 
@@ -756,15 +773,13 @@
 
 @media (min-width: 720px) {
   .flex-md-column {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 720px) {
   .flex-md-row {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: row;
   }
 }
 
@@ -858,15 +873,13 @@
 
 @media (min-width: 960px) {
   .flex-lg-column {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 960px) {
   .flex-lg-row {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: row;
   }
 }
 
@@ -960,15 +973,13 @@
 
 @media (min-width: 1200px) {
   .flex-xl-column {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 1200px) {
   .flex-xl-row {
-    width: min(100% - 2rem, 600px);
-    margin-inline: auto;
+    flex-direction: row;
   }
 }
 

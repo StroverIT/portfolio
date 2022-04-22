@@ -1,0 +1,11 @@
+
+@use "./colors" as *;
+.btn{
+    background-color: transparent;
+    text-align: center;
+    border: 0;
+    // padding: 6px 10px 6px 10px;
+    cursor: pointer;
+    border: 1px solid  $primary-color; 
+    color: $primary-color;
+}

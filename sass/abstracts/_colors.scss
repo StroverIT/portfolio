@@ -1,6 +1,11 @@
 $bg-color: #094074;
-$primary-blue: #5ADBFF;
+$primary-color: #5ADBFF;
+$third-color: gray;
 $secondary-color: #FE9000;
 $white-color: #fff;
 $light-blue: #3C6997;
 $yellow-color: #FFDD4A; 
+
+.primary-color{
+    color: $primary-color;
+}

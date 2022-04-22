@@ -19,7 +19,7 @@
     flex-flow: row wrap;
 }
 .container-fluid{
-        width:  min(100% - 2rem, 1400px);
+        width:  min(100% - 2rem, 1200px);
         margin-inline: auto;
 }
 .container{
@@ -34,6 +34,12 @@
 }
 .justify-content-center{
     justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
 }
 $padding-num: 5;
 
@@ -89,14 +95,12 @@ $padding-num: 5;
     }
     .flex-#{$key}-column{
         @media (min-width: $value){
-            width:  min(100% - 2rem, 600px);
-            margin-inline: auto;
+          flex-direction: column;
         }
     }
     .flex-#{$key}-row{
         @media (min-width: $value){
-            width:  min(100% - 2rem, 600px);
-            margin-inline: auto;
+           flex-direction: row;
         }
     }
 }
