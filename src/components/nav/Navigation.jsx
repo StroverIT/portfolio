@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
         <nav className="container-fluid">
             <section className="navTextContainer d-flex justify-content-between">
-                <div style={{ "width": "100px", "height": "100%"}}>
+                <div>
                     <img src={Logo} alt="" />
                 </div>
                 <div className="d-flex nav-links">
