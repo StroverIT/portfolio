@@ -1,12 +1,13 @@
 import React from 'react';
 import "./navigation.css"
+import Logo from "../../assets/Logo.svg"
 
 const Navigation = () => {
     return (
         <nav className="container-fluid">
-            <section className="d-flex justify-content-between">
-                <div>
-                <img src="logo" alt="logo" />
+            <section className="navTextContainer d-flex justify-content-between">
+                <div style={{ "width": "100px", "height": "100%"}}>
+                    <img src={Logo} alt="" />
                 </div>
                 <div className="d-flex nav-links">
                     <ul className="d-flex flex-column flex-md-row align-items-center">
@@ -19,7 +20,7 @@ const Navigation = () => {
                     </ul>
                 </div>
             </section>
-            <section>
+            <section className="navIconContainer">
                 <div className="navSticky nav-social">
                     <div>Git Icon</div>
                     <div>Instagram Icon</div>
