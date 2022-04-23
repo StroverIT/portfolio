@@ -1,6 +1,12 @@
 nav > section > *{
     font-size: 0.9rem;
 }
+.navTextContainer {
+    margin: 10px 0;
+}
+.nav-links ul{
+    column-gap: 2rem;
+}
 .navIconContainer{
     position:relative; 
 }
