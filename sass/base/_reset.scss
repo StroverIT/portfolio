@@ -9,15 +9,20 @@
     outline: 0;
     border: 0;
     list-style: none;
+    overflow: hidden;
+
 }
 html{
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;
     scrollbar-width: thin;
+    overflow-y: visible;
+
 
   }
   body::-webkit-scrollbar {
+
     width: 8px;
   }
   body::-webkit-scrollbar-track {
@@ -37,6 +42,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $bg-color;
+    counter-reset: section;
 }
 #root{
     position: relative;
