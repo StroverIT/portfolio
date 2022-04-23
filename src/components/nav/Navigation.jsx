@@ -6,7 +6,7 @@ import { BsInstagram, BsGithub, BsFacebook, BsYoutube } from "react-icons/bs";
 const Navigation = () => {
   return (
     <nav className="container-fluid">
-      <section className="navTextContainer d-flex justify-content-between">
+      <section className="navTextContainer d-flex justify-content-between container-fluid">
         <div>
           <img src={Logo} alt="" />
         </div>
