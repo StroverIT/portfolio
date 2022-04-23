@@ -11,11 +11,29 @@
     list-style: none;
 }
 html{
+    box-sizing: border-box;
+    width: 100%;
     scroll-behavior: smooth;
-}
-::-webkit-scrollbar{
-    display: none;
-}
+    scrollbar-width: thin;
+
+  }
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track {
+      background-color: $bg-color;
+      filter: brightness(2);
+
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+    border: 3px solid $secondary-color;
+    scrollbar-width: thin;
+
+    border-radius: 10px;
+  }
+
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $bg-color;
