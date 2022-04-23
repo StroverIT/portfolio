@@ -1,7 +1,7 @@
 import React from "react";
 import "./navigation.css";
 import Logo from "../../assets/Logo.svg";
-import { BsInstagram, BsGithub, BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsGithub, BsFacebook, BsYoutube } from "react-icons/bs";
 
 const Navigation = () => {
   return (
@@ -14,15 +14,15 @@ const Navigation = () => {
           <ul className="d-flex flex-column flex-md-row align-items-center">
             <li className="secondary-color">
               {" "}
-              <span className="primary-color">01.</span> About
+              <a href=""><span className="primary-color">01.</span> About</a>
             </li>
             <li className="secondary-color">
               {" "}
-              <span className="primary-color">02.</span> Work
+              <a href=""><span className="primary-color">02.</span> Work</a>
             </li>
             <li className="secondary-color">
               {" "}
-              <span className="primary-color">03.</span> Contact
+              <a href=""><span className="primary-color">03.</span> Contact</a>
             </li>
             <li className="btn">Resume</li>
           </ul>
@@ -45,6 +45,11 @@ const Navigation = () => {
                 <li>
                   <a href="">
                     <BsFacebook />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <BsYoutube />
                   </a>
                 </li>
                 </ul>
