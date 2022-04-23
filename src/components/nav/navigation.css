@@ -10,32 +10,34 @@ nav > section > *{
     left: 0;
 }
 .fixed-wrapper-right{
-    left: 92%;
+    left: 96%;
 }
 .navSticky{
     position: fixed;
     bottom: 0;
 
 }
-.navSticky > *{
-    height: 30vh;
-
-}
 /* Social links */
+.nav-social ul li{
+   padding-bottom: 10px;
+}
 .nav-social > ul::after{
     content: "";
     display: block;
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: #fff;
+    background-color: var(--secondary-color);
+
 }
 .nav-social a{
-    color:black;
-    font-size: 1.10rem;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    
 }
 /* Email link */
 .nav-email > a{
+    padding-bottom: 10px;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-lr;
 
@@ -46,13 +48,10 @@ nav > section > *{
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .nav-links{
     filter: brightness(1.5);
 }
 
-.container-fluid{
-    position: relative;
-}
