@@ -4,8 +4,8 @@ import "./about.css"
 
 export default function About() {
   return (
-    <section>
-      <h3 className="title firstSection">About me</h3>
+    <sectio>
+      <h3 className="title firstSection title-color">About me</h3>
       <p>Hello! My name is Emil and I enjoy creating things that live on the internet. 
         My interest in web development stated back in 2018 when my school teacher decided to teach us HTML and CSS 
         --- turns out I love that technologies and tried to deep dive into it.
@@ -30,6 +30,6 @@ export default function About() {
         <li>Jquery</li>
         <li>Sass</li>
       </ul>
-    </section>
+    </sectio>
   )
 }
