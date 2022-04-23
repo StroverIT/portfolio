@@ -50,6 +50,9 @@
 .align-items-center{
     align-items: center;
 }
+.align-content-center{
+    align-content: center;
+}
 $padding-num: 5;
 
 @each $key, $value in breakpoints.$breakpoints{

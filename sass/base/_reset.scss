@@ -8,9 +8,7 @@
     text-decoration: none;
     outline: 0;
     border: 0;
-    list-style-type: none;
-
-
+    list-style: none;
 }
 html{
     scroll-behavior: smooth;
@@ -21,4 +19,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $bg-color;
+}
+#root{
+    position: relative;
 }
