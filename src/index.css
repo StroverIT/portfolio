@@ -499,6 +499,10 @@
   align-items: center;
 }
 
+.align-content-center {
+  align-content: center;
+}
+
 @media (min-width: 0) {
   .p-xs-1 {
     padding: 1rem;
@@ -1011,7 +1015,7 @@
   text-decoration: none;
   outline: 0;
   border: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 html {
@@ -1025,6 +1029,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #094074;
+}
+
+#root {
+  position: relative;
 }
 
 /*# sourceMappingURL=index.css.map */
