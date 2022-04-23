@@ -23,7 +23,7 @@
         margin-inline: auto;
 }
 .container{
-        width:  min(100% - 2rem, 900px);
+        width:  min(100% - 2rem, 700px);
         margin-inline: auto;
 }
 .flex-column{
@@ -60,6 +60,18 @@ $padding-num: 5;
 
 @each $key, $value in breakpoints.$breakpoints{
     @for $i from 1 through $padding-num{
+        .pt-#{$i}{
+            padding-bottom: $i * 1rem;
+        }
+        .pb-#{$i}{
+            padding-bottom: $i * 1rem;
+        }
+        .mt-#{$i}{
+            margin-top: $i * 1rem;
+        }
+        .mb-#{$i}{
+            margin-bottom: $i * 1rem;
+        }
         @media (min-width: $value){
             .pt-#{$key}-#{$i}{
                 padding-bottom: $i * 1rem;
