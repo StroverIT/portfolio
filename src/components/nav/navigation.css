@@ -1,8 +1,58 @@
 nav > section > *{
     font-size: 0.9rem;
 }
+.navIconContainer{
+    position:relative;
+  
+}
+.fixed-wrapper{  
+    position: absolute;
+    left: 0;
+}
+.fixed-wrapper-right{
+    left: 92%;
+}
+.navSticky{
+    position: fixed;
+    bottom: 0;
+
+}
+.navSticky > *{
+    height: 30vh;
+
+}
+/* Social links */
+.nav-social > ul::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+.nav-social a{
+    color:black;
+    font-size: 1.10rem;
+}
+/* Email link */
+.nav-email > a{
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
+
+}
+.nav-email::after{
+       content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+
 .nav-links{
     filter: brightness(1.5);
 }
-.navTextContainer{
+
+.container-fluid{
+    position: relative;
 }
