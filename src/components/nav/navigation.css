@@ -2,8 +2,13 @@ nav > section > *{
     font-size: 0.9rem;
 }
 .navIconContainer{
-    position:relative;
-  
+    position:relative; 
+}
+a{
+    color: inherit;
+}
+li a:hover,a:hover{
+    color: var(--primary-color);
 }
 .fixed-wrapper{  
     position: absolute;
@@ -33,14 +38,23 @@ nav > section > *{
 .nav-social a{
     font-size: 1.25rem;
     color: var(--secondary-color);
-    
+    transition: transform 200ms, color 200ms ease-in-out;
+}
+.nav-social li:hover{
+    transform: translateY(-3px);
+
 }
 /* Email link */
 .nav-email > a{
     padding-bottom: 10px;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    transition: transform 200ms, color 200ms ease-in-out;
 
+}
+.nav-email a:hover{
+    transform: translateY(-3px);
 }
 .nav-email::after{
        content: "";
