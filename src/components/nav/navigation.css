@@ -30,7 +30,6 @@ li a:hover,a:hover{
 .navSticky{
     position: fixed;
     bottom: 0;
-
 }
 /* Social links */
 .nav-social ul li{
@@ -55,12 +54,13 @@ li a:hover,a:hover{
 
 }
 /* Email link */
+
 .nav-email > a{
-    padding-bottom: 10px;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-lr;
     letter-spacing: 2px;
     transition: transform 200ms, color 200ms ease-in-out;
+    height: 240px;
 
 }
 .nav-email a:hover{
