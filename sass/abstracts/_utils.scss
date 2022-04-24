@@ -14,81 +14,21 @@
 .d-grid{
     display: grid !important;
 }
-.row{
-    display:flex;
-    flex-flow: row wrap;
+.order-m1{
+    order: -1;
 }
-.container-fluid{
-        width:  min(100% - 2rem, 1200px);
-        margin-inline: auto;
+.order-1{
+    order: 1;
 }
-.container{
-        width:  min(100% - 2rem, 700px);
-        margin-inline: auto;
+.order-2{
+    order: 2;
 }
-.flex-column{
-    flex-direction: column;
-}
-.flex-row{
-    flex-direction: row;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.justify-content-between{
-    justify-content: space-between;
-}
-.justify-content-around{
-    justify-content: space-around;
-}
-.justify-content-start{
-    justify-content: start;
-}
-.justify-content-end{
-    justify-content: end;
-}
-.align-items-start{
-    align-items: start;
-}
-.align-items-center{
-    align-items: center;
-}
-.align-content-center{
-    align-content: center;
+.order-3{
+    order: 3;
 }
 $padding-num: 5;
-
 @each $key, $value in breakpoints.$breakpoints{
-    @for $i from 1 through $padding-num{
-        .pt-#{$i}{
-            padding-bottom: $i * 1rem;
-        }
-        .pb-#{$i}{
-            padding-bottom: $i * 1rem;
-        }
-        .mt-#{$i}{
-            margin-top: $i * 1rem;
-        }
-        .mb-#{$i}{
-            margin-bottom: $i * 1rem;
-        }
-        @media (min-width: $value){
-            .pt-#{$key}-#{$i}{
-                padding-bottom: $i * 1rem;
-            }
-            .pb-#{$key}-#{$i}{
-                padding-bottom: $i * 1rem;
-            }
-            .mt-#{$key}-#{$i}{
-                margin-top: $i * 1rem;
-            }
-            .mb-#{$key}-#{$i}{
-                margin-bottom: $i * 1rem;
-            }
-            
-        }
-        
-    }
+
     @for $i from 1 through $padding-num{
         @media (min-width: $value){
             .b-#{$key}-#{$i}{
@@ -96,6 +36,26 @@ $padding-num: 5;
             }
         }
         
+    }
+    .order-#{$key}-1{
+        @media (min-width: $value){
+            order: 1;
+        }
+    }
+    .order-#{$key}-2{
+        @media (min-width: $value){
+           order: 2;
+        }
+    }
+    .order-#{$key}-3{
+        @media (min-width: $value){
+        order: 3;
+        }
+    }
+    .order-#{$key}-m1{
+        @media (min-width: $value){
+            order: -1;
+        }
     }
     .d-#{$key}-none{
         @media (min-width: $value){
@@ -130,16 +90,7 @@ $padding-num: 5;
             margin-inline: auto;
         }
     }
-    .flex-#{$key}-column{
-        @media (min-width: $value){
-          flex-direction: column;
-        }
-    }
-    .flex-#{$key}-row{
-        @media (min-width: $value){
-           flex-direction: row;
-        }
-    }
+  
 }
 
 .list-container{
