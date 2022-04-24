@@ -556,27 +556,27 @@
 
 @media (min-width: 0) {
   .b-xs-1 {
-    border: 1rem solid #094074;
+    border: 1rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 0) {
   .b-xs-2 {
-    border: 2rem solid #094074;
+    border: 2rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 0) {
   .b-xs-3 {
-    border: 3rem solid #094074;
+    border: 3rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 0) {
   .b-xs-4 {
-    border: 4rem solid #094074;
+    border: 4rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 0) {
   .b-xs-5 {
-    border: 5rem solid #094074;
+    border: 5rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 0) {
@@ -643,27 +643,27 @@
 
 @media (min-width: 480px) {
   .b-sm-1 {
-    border: 1rem solid #094074;
+    border: 1rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 480px) {
   .b-sm-2 {
-    border: 2rem solid #094074;
+    border: 2rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 480px) {
   .b-sm-3 {
-    border: 3rem solid #094074;
+    border: 3rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 480px) {
   .b-sm-4 {
-    border: 4rem solid #094074;
+    border: 4rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 480px) {
   .b-sm-5 {
-    border: 5rem solid #094074;
+    border: 5rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 480px) {
@@ -730,27 +730,27 @@
 
 @media (min-width: 720px) {
   .b-md-1 {
-    border: 1rem solid #094074;
+    border: 1rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 720px) {
   .b-md-2 {
-    border: 2rem solid #094074;
+    border: 2rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 720px) {
   .b-md-3 {
-    border: 3rem solid #094074;
+    border: 3rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 720px) {
   .b-md-4 {
-    border: 4rem solid #094074;
+    border: 4rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 720px) {
   .b-md-5 {
-    border: 5rem solid #094074;
+    border: 5rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 720px) {
@@ -817,27 +817,27 @@
 
 @media (min-width: 960px) {
   .b-lg-1 {
-    border: 1rem solid #094074;
+    border: 1rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 960px) {
   .b-lg-2 {
-    border: 2rem solid #094074;
+    border: 2rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 960px) {
   .b-lg-3 {
-    border: 3rem solid #094074;
+    border: 3rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 960px) {
   .b-lg-4 {
-    border: 4rem solid #094074;
+    border: 4rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 960px) {
   .b-lg-5 {
-    border: 5rem solid #094074;
+    border: 5rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 960px) {
@@ -904,27 +904,27 @@
 
 @media (min-width: 1200px) {
   .b-xl-1 {
-    border: 1rem solid #094074;
+    border: 1rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 1200px) {
   .b-xl-2 {
-    border: 2rem solid #094074;
+    border: 2rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 1200px) {
   .b-xl-3 {
-    border: 3rem solid #094074;
+    border: 3rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 1200px) {
   .b-xl-4 {
-    border: 4rem solid #094074;
+    border: 4rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 1200px) {
   .b-xl-5 {
-    border: 5rem solid #094074;
+    border: 5rem solid hsl(209deg, 86%, 20%);
   }
 }
 @media (min-width: 1200px) {
@@ -2058,7 +2058,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #094074;
+  background-color: hsl(209deg, 86%, 20%);
   filter: brightness(2);
 }
 
@@ -2071,7 +2071,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #094074;
+  background-color: hsl(209deg, 86%, 20%);
   counter-reset: section;
 }
 
