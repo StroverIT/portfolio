@@ -10,11 +10,12 @@
             color: $primary-color;
         }
     }
+
     &-content{
         color:$secondary-color;
-
+        filter: brightness(1.5);
         p{
-            background-color:  $bg-color-lighter;
+            background-color:  $bg-color;
 
         }
         
@@ -32,8 +33,9 @@
     }
 }
 .technologies{
+    
     &-left li{
-
+        display: inline-flex;
         padding-left:  10px;
     }
    
