@@ -1,0 +1,92 @@
+@use "./breakpoints" as breakpoints;
+@use "sass:math";
+
+.row{
+    display:flex;
+    flex-flow: row wrap;
+}
+.container-fluid{
+        width:  min(100% - 2rem, 1200px);
+        margin-inline: auto;
+}
+.container{
+        width:  min(100% - 2rem, 700px);
+        margin-inline: auto;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-start{
+    justify-content: start;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.align-items-start{
+    align-items: start;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-content-center{
+    align-content: center;
+}
+$padding-num: 5;
+
+@each $key, $value in breakpoints.$breakpoints{
+    .flex-#{$key}-column{
+        @media (min-width: $value){
+          flex-direction: column;
+        }
+    }
+    .flex-#{$key}-row{
+        @media (min-width: $value){
+           flex-direction: row;
+        }
+    }
+    @for $i from 1 through $padding-num{
+        .pt-#{$i}{
+            padding-bottom: $i * 1rem;
+        }
+        .pb-#{$i}{
+            padding-bottom: $i * 1rem;
+        }
+        .mt-#{$i}{
+            margin-top: $i * 1rem;
+        }
+        .mb-#{$i}{
+            margin-bottom: $i * 1rem;
+        }
+        .ml-#{$i}{
+            margin-left: $i * 1rem;
+        }
+        @media (min-width: $value){
+            .pt-#{$key}-#{$i}{
+                padding-bottom: $i * 1rem;
+            }
+            .pb-#{$key}-#{$i}{
+                padding-bottom: $i * 1rem;
+            }
+            .mt-#{$key}-#{$i}{
+                margin-top: $i * 1rem;
+            }
+            .mb-#{$key}-#{$i}{
+                margin-bottom: $i * 1rem;
+            }
+            
+        }
+        
+    }
+}
