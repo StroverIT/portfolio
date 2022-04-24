@@ -5,6 +5,7 @@
 @use "./abstracts/breakpoints" ;
 @use "./abstracts/grid" ;
 @use "./abstracts/utils" ;
+@use "./abstracts/spacing" as *;
 
 // ---- Base ---
 @use "./base/reset";
