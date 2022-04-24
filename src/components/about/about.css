@@ -1,0 +1,40 @@
+
+
+.about .row{
+    font-size:1.1rem;
+}
+.about .row .about-image{
+    filter: brightness(0.6);
+    filter:blur(1px) saturate(95%);
+    transition: all 0.2s ease;
+    position: relative;
+}
+.about .row .about-image img{
+    height:60%; 
+    object-fit: scale-down;
+}
+
+.about .row .about-image:hover{
+    transform: scale(1.05);
+    filter: brightness(1);
+    zoom: 1;
+    
+}
+.about p, .about ul{
+    margin-top: 1rem;
+}
+.about ul{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+.about ul li{
+    font-size: 0.85rem;
+}
+.about ul li:before{
+    content: "▹";
+    display: inline-block;
+    color: var(--primary-color);
+    height: 15px;
+    width: 15px;
+}
