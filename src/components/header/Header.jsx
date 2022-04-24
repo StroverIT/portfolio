@@ -7,10 +7,10 @@ export default function Header() {
      <div className="pb-1">
        <p className="primary-color bigger-text">Hi, my name is</p>
      </div>
-      <div >
+      <div className="headerTest">
         <h1 className="title-color big-title">Emil Zlatinov</h1>
       </div>
-     <div>
+     <div className="headerTest2">
        <h1 className="reading-text-color big-title">I build things for the web.</h1>
      </div>
      <div className="col-sm-7 mt-1">
