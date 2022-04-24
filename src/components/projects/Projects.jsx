@@ -14,7 +14,7 @@ const Projects = () => {
                   <p>
                       My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
                   </p>
-                  <ul className="technologies-left d-flex">
+                  <ul className="technologies-left">
                         <li>Nginx</li>
                         <li>MongoDb</li>
                         <li>NodeJs</li>
