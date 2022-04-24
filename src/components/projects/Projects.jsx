@@ -1,5 +1,7 @@
 import React from 'react';
 import "./projects.scss"
+import {  BsGithub } from "react-icons/bs";
+import { FiExternalLink} from "react-icons/fi"
 
 const Projects = () => {
     return (
@@ -8,7 +10,7 @@ const Projects = () => {
       <section className="projects-content">
           <ul>
               <li className="projects-right">
-                  <h3>My first project</h3>
+                  <a className="projects-title title-color">My first project</a>
                   <p>
                       My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
                   </p>
@@ -20,6 +22,10 @@ const Projects = () => {
                         <li>Boostrap</li>
                         <li>Jquery</li>
                   </ul>
+                  <section className="icons icons__right">
+                        <a><BsGithub /></a>
+                        <a><FiExternalLink /></a>
+                  </section>
               </li>
           </ul>
       </section>
