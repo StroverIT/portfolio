@@ -1,8 +1,35 @@
+@use "../../../sass/abstracts/colors" as *;
 .projects{
+
     height: 80vh;
+    &-title{
+        font-weight: 700;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    &-content{
+        color:$secondary-color;
+
+        p{
+            background-color:  $bg-color-lighter;
+
+        }
+        
+    }
+  
    &-right{
        text-align: right;
    }
+}
+.icons{
+    display: inline-flex;
+    cursor: pointer;
+    &__right a{
+        padding-left: 10px;
+    }
 }
 .technologies{
     &-left li{
