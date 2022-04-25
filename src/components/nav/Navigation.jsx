@@ -30,7 +30,7 @@ const Navigation = () => {
       <section className="navIconContainer d-none d-lg-block">
           <div className="fixed-wrapper">
               <div className="navSticky nav-social ">
-              <SocMedIcons />
+              <SocMedIcons position="flex-column" />
               </div>
           </div>
           <div className="fixed-wrapper fixed-wrapper-right">
