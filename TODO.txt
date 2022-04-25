@@ -10,4 +10,6 @@
 Stack: 
 REACT, SCSS
 
-Todo:
+Todo::
+ ADD on selection different color
+Make social media icons component
