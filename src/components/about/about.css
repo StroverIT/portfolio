@@ -1,6 +1,6 @@
 
 .about {
-    height: 80vh;
+    min-height: 80vh;
 }
 .about .row{
     font-size:1.1rem;
