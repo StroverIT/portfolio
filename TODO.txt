@@ -13,3 +13,5 @@ REACT, SCSS
 Todo::
  ADD on selection different color
 Make social media icons component
+Add a to ancors to social media icons
+Add animations
