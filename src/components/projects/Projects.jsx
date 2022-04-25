@@ -10,7 +10,7 @@ const Projects = () => {
       <section className="projects-content">
           <ul>
               <li className="projects-right">
-                  <a className="projects-title title-color">My first project</a>
+                  <a className="projects-title title-color">SoftOffice</a>
                   <p>
                       My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
                   </p>
