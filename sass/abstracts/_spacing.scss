@@ -85,6 +85,14 @@ $padding-num: 5;
             .mb-#{$key}-#{$i}{
                 margin-bottom: $i * 1rem;
             }
+            .my-#{$key}-#{$i}{
+                margin-top: $i * 1rem;
+                margin-bottom: $i * 1rem;
+            }
+            .mx-#{$key}-#{$i}{
+                margin-left: $i * 1rem;
+                margin-right: $i * 1rem;
+            }
             
         }
         
