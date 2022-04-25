@@ -4,10 +4,13 @@ import "./footer.scss"
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="icons d-flex justify-content-center align-items-center d-lg-none" >
+        <footer className="d-flex justify-content-center align-items-center ">
+            <div className="icons d-lg-none" >
             <SocMedIcons />            
             </div>
+            <section>
+                <p>Designed & Built by Emil Zlatinov</p>
+            </section>
         </footer>
     );
 }
