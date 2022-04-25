@@ -1,0 +1,31 @@
+@use "../../../sass/abstracts/breakpoints" as *;
+
+header{
+    min-height:100vh;
+    align-items: flex-start;
+}
+header > * {
+    height:auto;
+}
+.header{
+        height:10px;
+
+        &-name{
+            line-height: 1;
+        }
+    &-description{
+    line-height: 1;
+    }
+    @include md{
+        &-name{
+            margin-top: -25px;
+            margin-bottom: -25px;
+            line-height: 1.5;
+
+        }
+        &-description{
+            line-height: 1.3;
+
+        }
+    }
+}
