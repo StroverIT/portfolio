@@ -1,8 +1,7 @@
 import React from "react";
 import "./navigation.css";
 import Logo from "../../assets/Logo.svg";
-import { BsInstagram, BsGithub, BsFacebook, BsYoutube } from "react-icons/bs";
-
+import SocMedIcons from "../icons/SocialMedia";
 const Navigation = () => {
   return (
     <nav className="container-fluid">
@@ -31,28 +30,7 @@ const Navigation = () => {
       <section className="navIconContainer d-none d-lg-block">
           <div className="fixed-wrapper">
               <div className="navSticky nav-social ">
-                  <ul className="d-flex flex-column justify-content-between">
-                <li>
-                  <a href="">
-                    <BsGithub />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <BsInstagram />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <BsFacebook />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <BsYoutube />
-                  </a>
-                </li>
-                </ul>
+              <SocMedIcons />
               </div>
           </div>
           <div className="fixed-wrapper fixed-wrapper-right">
