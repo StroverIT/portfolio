@@ -56,7 +56,7 @@ $padding-num: 5;
            flex-direction: row;
         }
     }
-    @for $i from 1 through $padding-num{
+    @for $i from 0 through $padding-num{
         .pt-#{$i}{
             padding-bottom: $i * 1rem;
         }
@@ -73,14 +73,15 @@ $padding-num: 5;
             margin-left: $i * 1rem;
         }
         @media (min-width: $value){
+            
             .pt-#{$key}-#{$i}{
-                padding-bottom: $i * 1rem;
+                padding-top: $i * 1rem ;
             }
             .pb-#{$key}-#{$i}{
-                padding-bottom: $i * 1rem;
+                padding-bottom: $i * 1rem ;
             }
             .mt-#{$key}-#{$i}{
-                margin-top: $i * 1rem;
+                margin-top: $i * 1rem !important;
             }
             .mb-#{$key}-#{$i}{
                 margin-bottom: $i * 1rem;
