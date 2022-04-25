@@ -3,7 +3,7 @@ import { BsInstagram, BsGithub, BsFacebook, BsYoutube } from "react-icons/bs";
 
 export default function SocialMedia({position}) {
   return (
-    <ul className={`d-flex justify-content-between ${position  ? position : ""}`}>
+    <ul className={`d-flex ${position  ? position : ""}`}>
                 <li>
                   <a href="">
                     <BsGithub />
