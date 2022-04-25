@@ -26,7 +26,7 @@ export default function About() {
         </p>
       </section>
       <section className="col-md-1"></section>
-      <section className="about-image col-md-4 col-12 d-flex justify-content-center order-2 order-md-1">
+      <section className="about-image col-md-4 col-12 d-flex justify-content-center order-2 order-md-1 mt-2 mt-md-0">
       <img src={Me} alt="Me myself and I" />
     </section>
 
