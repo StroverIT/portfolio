@@ -1,5 +1,6 @@
 import React from 'react';
 import "./contact.scss";
+import  Form from "../form/Form";
 
 const Contact = () => {
     return (
@@ -12,7 +13,7 @@ const Contact = () => {
                 Althrough I'm now currently looking for new opportunities, my inbox is always open. 
                 Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
-          
+          <Form />
         </section>
     );
 }
