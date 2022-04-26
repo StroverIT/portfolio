@@ -1,0 +1,13 @@
+@use "../../../sass/abstracts/colors" as *;
+.titleNext{
+    height:100%;
+}
+.getInTouch{
+    margin-top: -18px;
+}
+.contact{
+    .text{
+        text-align: center;
+        color: $secondary-color;
+    }
+}
