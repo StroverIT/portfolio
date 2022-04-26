@@ -14,8 +14,7 @@ const Contact = () => {
                 Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
             <section className="col-12 col-sm-7">
-          <Form />
-
+                <Form />
             </section>
         </section>
     );
