@@ -5,12 +5,16 @@
 .bigger-text{
     font-size: 1.25rem;
 }
-.big-title{
-    font-size: 3.5rem;
-}
 .title{
     position: relative;
 }
+.bigger-title{
+    font-size: 2.25rem;
+}
+.big-title{
+    font-size: 3.5rem;
+}
+
 .title::before{
     counter-increment: section;
     content: "0" counter(section) ". ";
