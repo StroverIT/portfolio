@@ -43,18 +43,28 @@
 .align-content-center{
     align-content: center;
 }
+.text-center{
+    text-align: center;
+}
 $padding-num: 5;
 
 @each $key, $value in breakpoints.$breakpoints{
-    .flex-#{$key}-column{
-        @media (min-width: $value){
-          flex-direction: column;
-        }
-    }
-    .flex-#{$key}-row{
-        @media (min-width: $value){
-           flex-direction: row;
-        }
+         
+    
+         
+    @media (min-width: $value){
+            .flex-#{$key}-column{
+                flex-direction: column;
+            }
+            .flex-#{$key}-row{
+                    flex-direction: row;
+            }
+            .text-#{$key}-center{
+                text-align: center;
+            }
+            .text-#{$key}-start{
+                text-align: start !important;
+            }
     }
     @for $i from 0 through $padding-num{
         .pt-#{$i}{
@@ -94,7 +104,7 @@ $padding-num: 5;
                 margin-left: $i * 1rem;
                 margin-right: $i * 1rem;
             }
-            
+           
         }
         
     }
