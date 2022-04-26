@@ -4,7 +4,7 @@ import "./footer.scss"
 
 const Footer = () => {
     return (
-        <footer className="d-flex justify-content-center align-items-center ">
+        <footer className="d-flex justify-content-center align-items-center flex-column">
             <div className="icons d-lg-none" >
             <SocMedIcons />            
             </div>
