@@ -49,9 +49,7 @@
 $padding-num: 5;
 
 @each $key, $value in breakpoints.$breakpoints{
-         
-    
-         
+              
     @media (min-width: $value){
             .flex-#{$key}-column{
                 flex-direction: column;
