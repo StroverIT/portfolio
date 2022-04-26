@@ -1,0 +1,26 @@
+@use "../../../sass/abstracts/colors" as *;
+form{
+    input,textarea{
+        background-color: transparent;        
+        font-size: 1.1rem;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        width: 100%;
+        &::placeholder{
+            color: $secondary-color;
+        }
+    }
+    button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: $secondary-color !important;
+        text-align: center;
+    }
+
+}
