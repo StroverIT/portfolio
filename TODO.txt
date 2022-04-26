@@ -15,3 +15,4 @@ Todo::
 Make social media icons component
 Add a to ancors to social media icons
 Add animations
+To change from english to BG
