@@ -17,9 +17,10 @@
                 top:0;
                 left:0;
                 z-index: 2;
-                @include lg{
+               &:hover{
+                filter: brightness(0.5);
 
-                }
+               }
             }
            
         }
