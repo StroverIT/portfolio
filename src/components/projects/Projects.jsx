@@ -13,12 +13,12 @@ const Projects = () => {
       <section className="projects-content">
           <ul>
               <li className="project projects-right row">
-                  <section className="image col-lg-6">
+                  <section className="image ">
                       <a href="#">
                             <SoftOfficeVideo source={softOfficeVideoSource}/>
                       </a>
                   </section>
-                  <section className="text col-lg-6">
+                  <section className="text ">
                       <a className="projects-title title-color">SoftOffice</a>
                       <p>
                           My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
