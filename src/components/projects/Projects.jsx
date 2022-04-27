@@ -16,7 +16,7 @@ const Projects = () => {
               <section className=" text  d-flex justify-content-center flex-column">
                       <div className="container">
                           <a className="projects-title title-color">SoftOffice</a>
-                          <p>
+                          <p className="reading-text-color">
                               My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
                           </p>
                           <ul className="technologies-left reading-text-color">
