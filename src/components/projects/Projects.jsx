@@ -18,23 +18,25 @@ const Projects = () => {
                             <SoftOfficeVideo source={softOfficeVideoSource}/>
                       </a>
                   </section>
-                  <section className="text ">
-                      <a className="projects-title title-color">SoftOffice</a>
-                      <p>
-                          My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
-                      </p>
-                      <ul className="technologies-left">
-                            <li>Nginx</li>
-                            <li>MongoDb</li>
-                            <li>NodeJs</li>
-                            <li>Express</li>
-                            <li>Boostrap</li>
-                            <li>Jquery</li>
-                      </ul>
-                      <section className="icons icons__right">
-                            <a><BsGithub /></a>
-                            <a><FiExternalLink /></a>
-                      </section>
+                  <section className=" text  d-flex justify-content-center flex-column">
+                      <div className="container">
+                          <a className="projects-title title-color">SoftOffice</a>
+                          <p>
+                              My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
+                          </p>
+                          <ul className="technologies-left">
+                                <li>Nginx</li>
+                                <li>MongoDb</li>
+                                <li>NodeJs</li>
+                                <li>Express</li>
+                                <li>Boostrap</li>
+                                <li>Jquery</li>
+                          </ul>
+                          <section className="icons icons__right">
+                                <a><BsGithub /></a>
+                                <a><FiExternalLink /></a>
+                          </section>
+                      </div>
                   </section>
               </li>
           </ul>
