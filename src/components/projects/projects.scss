@@ -4,11 +4,13 @@
     
     .project{
         position: relative;
+
         height: 500px;
         .image {
             object-fit: contain;
-          
+            
             a{
+                filter: brightness(0.1);
                 width: 100%;
                 height: 100%;
                 position: absolute;
