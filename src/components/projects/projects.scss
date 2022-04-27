@@ -42,10 +42,13 @@
     }
 
     &-content{
-        color:$secondary-color;
-        filter: brightness(1.5);
+       
         p{
-            background-color:  $bg-color;
+            @include lg{
+                color:$secondary-color;
+                filter: brightness(1.5);
+                background-color:  $bg-color;
+            }
 
         }
         
@@ -61,14 +64,19 @@
     display: inline-flex;
     cursor: pointer;
     &__right a{
-        padding-left: 10px;
+        @include lg{
+            padding-left: 10px;
+        }
     }
 }
 .technologies{
     
     &-left li{
         display: inline-flex;
+        @include lg{
         padding-left:  10px;
+
+        }
     }
    
 }
