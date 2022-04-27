@@ -13,18 +13,13 @@ const Projects = () => {
       <section className="projects-content">
           <ul>
               <li className="project projects-right row">
-                  <section className="image ">
-                      <a href="#">
-                            <SoftOfficeVideo source={softOfficeVideoSource}/>
-                      </a>
-                  </section>
-                  <section className=" text  d-flex justify-content-center flex-column">
+              <section className=" text  d-flex justify-content-center flex-column">
                       <div className="container">
                           <a className="projects-title title-color">SoftOffice</a>
                           <p>
                               My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
                           </p>
-                          <ul className="technologies-left">
+                          <ul className="technologies-left reading-text-color">
                                 <li>Nginx</li>
                                 <li>MongoDb</li>
                                 <li>NodeJs</li>
@@ -32,12 +27,18 @@ const Projects = () => {
                                 <li>Boostrap</li>
                                 <li>Jquery</li>
                           </ul>
-                          <section className="icons icons__right">
+                          <section className="icons icons__right reading-text-color">
                                 <a><BsGithub /></a>
                                 <a><FiExternalLink /></a>
                           </section>
                       </div>
                   </section>
+                  <section className="image ">
+                      <a href="#">
+                            <SoftOfficeVideo source={softOfficeVideoSource}/>
+                      </a>
+                  </section>
+                  
               </li>
           </ul>
       </section>
