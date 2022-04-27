@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./projects.scss"
 import {  BsGithub } from "react-icons/bs";
 import { FiExternalLink} from "react-icons/fi"
@@ -7,13 +7,28 @@ import SoftOfficeVideo from "../video/Video";
 import softOfficeVideoSource from "../../assets/videos/softOffice.mkv"
 
 const Projects = () => {
+    const [isStarted, startVideo] = useState(false)
+    const text = useRef(null)
+    useEffect(()=>{
+        if(isStarted){
+            console.log(text.current);
+
+            text.current.classList.add("d-none")
+        }
+        if(!isStarted){
+            console.log(text.current);
+            text.current.classList.remove("d-none")
+        }
+
+    },[isStarted,text])
     return (
         <section className="projects">
       <h3 className="title title-color secondSection">Some Things I've Built</h3>
+      <p className="reading-text-color">To see demo of the project, hover the image! If you want to see it live, click it!</p>
       <section className="projects-content">
           <ul>
               <li className="project projects-right row">
-              <section className=" text  d-flex justify-content-center flex-column">
+              <section className=" text   justify-content-center flex-column d-none" ref={text}>
                       <div className="container">
                           <a className="projects-title title-color">SoftOffice</a>
                           <p className="reading-text-color">
@@ -33,9 +48,9 @@ const Projects = () => {
                           </section>
                       </div>
                   </section>
-                  <section className="image ">
+                  <section className="image" onMouseEnter={()=> startVideo(true)} onMouseLeave={()=> startVideo(false)}>
                       <a href="#">
-                            <SoftOfficeVideo source={softOfficeVideoSource}/>
+                            <SoftOfficeVideo source={softOfficeVideoSource} />
                       </a>
                   </section>
                   
