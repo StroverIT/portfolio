@@ -3,6 +3,7 @@
 :root {
   --primary-color:#5ADBFF;
   --secondary-color: #3C6997;
+  --secondary-color-bg-trans: rgb(60, 105, 151, 0.2);
 }
 
 .primary-color {
