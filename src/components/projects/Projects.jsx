@@ -21,6 +21,13 @@ const Projects = () => {
         }
 
     },[isStarted,text])
+    const projects = {
+        first: {
+            title: "SoftOffice",
+            description: `My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".`,
+            technologies: ["Nginx", "MongoDB", "NodeJS", "Express", "Bootstrap", "Jquery"]
+        }
+    }
     return (
         <section className="projects">
       <h3 className="title title-color secondSection">Some Things I've Built</h3>
@@ -30,9 +37,9 @@ const Projects = () => {
               <li className="project projects-right row">
               <section className=" text   justify-content-center flex-column d-none" ref={text}>
                       <div className="container">
-                          <a className="projects-title title-color">SoftOffice</a>
+                          <a className="projects-title title-color">{projects.first.title}</a>
                           <p className="reading-text-color">
-                              My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".
+                              
                           </p>
                           <ul className="technologies-left reading-text-color">
                                 <li>Nginx</li>
