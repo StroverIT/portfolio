@@ -15,7 +15,7 @@ const Projects = () => {
     }
    
     return (
-        <section className="projects">
+        <section className="projects" id="work">
       <h3 className="title title-color secondSection">Some Things I've Built</h3>
       <p className="reading-text-color">To see demo of the project, hover the image! If you want to see it live, click it!</p>
       <section className="projects-content">
