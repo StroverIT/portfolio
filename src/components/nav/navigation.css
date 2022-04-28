@@ -36,7 +36,7 @@ li a:hover,a:hover{
 }
 /* Social links */
 .nav-social ul li{
-   padding-bottom: 10px;
+   padding-bottom: 20px;
 }
 .nav-social > ul::after{
     content: "";
@@ -54,7 +54,6 @@ li a:hover,a:hover{
 }
 .nav-social li:hover{
     transform: translateY(-3px);
-
 }
 /* Email link */
 
