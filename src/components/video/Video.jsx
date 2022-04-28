@@ -4,10 +4,7 @@ const Video = ({source}) => {
     const [isStarted, setStart]= useState(false)
     const videoRef = useRef(null)
 
-    useEffect(() => {
-        console.log(videoRef,isStarted);
-            
-           
+    useEffect(() => {           
         if(isStarted){
             videoRef.current.muted = true
             videoRef.current.play()
