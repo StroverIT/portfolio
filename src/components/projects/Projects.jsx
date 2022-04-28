@@ -28,6 +28,11 @@ const Projects = () => {
             technologies: ["Nginx", "MongoDB", "NodeJS", "Express", "Bootstrap", "Jquery"]
         }
     }
+    function showTechs(array){
+        return array.map(e=>{
+            return <li key={e}>{e}</li>
+        })
+    }
     return (
         <section className="projects">
       <h3 className="title title-color secondSection">Some Things I've Built</h3>
@@ -39,15 +44,11 @@ const Projects = () => {
                       <div className="container">
                           <a className="projects-title title-color">{projects.first.title}</a>
                           <p className="reading-text-color">
-                              
+                              {projects.first.description}
                           </p>
                           <ul className="technologies-left reading-text-color">
-                                <li>Nginx</li>
-                                <li>MongoDb</li>
-                                <li>NodeJs</li>
-                                <li>Express</li>
-                                <li>Boostrap</li>
-                                <li>Jquery</li>
+                              {showTechs(projects.first.technologies)}
+                               
                           </ul>
                           <section className="icons icons__right reading-text-color">
                                 <a><BsGithub /></a>
