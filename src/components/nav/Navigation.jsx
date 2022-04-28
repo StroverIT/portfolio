@@ -15,10 +15,10 @@ const Navigation = () => {
               <a href="#about"><span className="primary-color">01.</span> About</a>
             </li>
             <li className="secondary-color">
-              <a href=""><span className="primary-color">02.</span> Work</a>
+              <a href="work"><span className="primary-color">02.</span> Work</a>
             </li>
             <li className="secondary-color">
-              <a href=""><span className="primary-color">03.</span> Contact</a>
+              <a href="contact"><span className="primary-color">03.</span> Contact</a>
             </li>
             <li className="btn">Resume</li>
           </ul>
