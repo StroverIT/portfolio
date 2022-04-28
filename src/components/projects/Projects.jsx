@@ -1,26 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
 import "./projects.scss"
-import {  BsGithub } from "react-icons/bs";
-import { FiExternalLink} from "react-icons/fi"
 
-import SoftOfficeVideo from "../video/Video";
 import softOfficeVideoSource from "../../assets/videos/softOffice.mkv"
 
+import Project from './Project';
+
 const Projects = () => {
-    const [isStarted, startVideo] = useState(false)
-    const text = useRef(null)
-    useEffect(()=>{
-        if(isStarted){
-            console.log(text.current);
-
-            text.current.classList.add("d-none")
-        }
-        if(!isStarted){
-            console.log(text.current);
-            text.current.classList.remove("d-none")
-        }
-
-    },[isStarted,text])
+  
     const projects = {
         first: {
             title: "SoftOffice",
@@ -28,41 +13,14 @@ const Projects = () => {
             technologies: ["Nginx", "MongoDB", "NodeJS", "Express", "Bootstrap", "Jquery"]
         }
     }
-    function showTechs(array){
-        return array.map(e=>{
-            return <li key={e}>{e}</li>
-        })
-    }
+   
     return (
         <section className="projects">
       <h3 className="title title-color secondSection">Some Things I've Built</h3>
       <p className="reading-text-color">To see demo of the project, hover the image! If you want to see it live, click it!</p>
       <section className="projects-content">
           <ul>
-              <li className="project projects-right row">
-              <section className=" text   justify-content-center flex-column d-none" ref={text}>
-                      <div className="container">
-                          <a className="projects-title title-color">{projects.first.title}</a>
-                          <p className="reading-text-color">
-                              {projects.first.description}
-                          </p>
-                          <ul className="technologies-left reading-text-color">
-                              {showTechs(projects.first.technologies)}
-                               
-                          </ul>
-                          <section className="icons icons__right reading-text-color">
-                                <a><BsGithub /></a>
-                                <a><FiExternalLink /></a>
-                          </section>
-                      </div>
-                  </section>
-                  <section className="image" onMouseEnter={()=> startVideo(true)} onMouseLeave={()=> startVideo(false)}>
-                      <a href="#">
-                            <SoftOfficeVideo source={softOfficeVideoSource} />
-                      </a>
-                  </section>
-                  
-              </li>
+             <Project title={projects.first.title} description={projects.first.description} technologies={projects.first.technologies} video={softOfficeVideoSource}/>
           </ul>
       </section>
         </section>
