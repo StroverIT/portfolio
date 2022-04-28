@@ -33,8 +33,11 @@ const Navigation = () => {
   }
   return (
     <nav className="">
-      <section className={`navTextContainer ${checker()}`}>
-        <div className="container-fluid d-flex justify-content-between flex-row">
+      <section className={`navTextContainer ${checker()} test`}>
+        <div className={`${show != null && show ? "shadow" : ""}`}>
+
+       
+        <div className="container-fluid d-flex justify-content-between flex-row ">
 
         <div>
           <img src={Logo} alt="" />
@@ -52,6 +55,7 @@ const Navigation = () => {
             </li>
             <li className="btn">Resume</li>
           </ul>
+          </div>
         </div>
         </div>
 
