@@ -17,3 +17,4 @@ Add a to ancors to social media icons
 Make navbar interactions
 Add animations
 To change from english to BG
+Fix spacing in projects (#work)
