@@ -85,14 +85,17 @@ li a:hover,a:hover{
 }
 
 .hidden{
-    opacity: 0;
+    transform: translateY(-50px);
     transition: all 0.2s ease-in;
+
 }
 .visible{
-    opacity: 0.25;
     transition: all 0.2s ease-in;
-    background-color: #fff;
-    div{
-        
-    }
+    background-color: var(--secondary-color-bg-trans);
+    
+}
+.shadow{
+    width: 100% !important;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+
 }
