@@ -1,11 +1,41 @@
-import React from "react";
-import "./navigation.css";
+import React, {useState, useEffect} from "react";
+import "./navigation.scss";
 import Logo from "../../assets/Logo.svg";
 import SocMedIcons from "../icons/SocialMedia";
 const Navigation = () => {
+  const [show, setShow] = useState(null);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = ()=>{
+    if(window.scrollY <= 20){
+      return setShow(null)
+    }
+    if(window.scrollY > lastScrollY ){
+      setShow(false)
+    }else{
+        setShow(true)
+    }
+    setLastScrollY(window.scrollY)
+  }
+
+  useEffect(()=>{
+    if(typeof window !== "undefined"){
+      window.addEventListener("scroll", controlNavbar)
+    }
+    return()=>{
+      window.removeEventListener("scroll", controlNavbar)
+    }
+  }, [lastScrollY])
+  function checker(){
+  if(show == null) return ""
+    if(show ) return "visible"
+    if(!show) return "hidden"
+  }
   return (
-    <nav className="container-fluid">
-      <section className="navTextContainer d-flex justify-content-between container-fluid">
+    <nav className="">
+      <section className={`navTextContainer ${checker()}`}>
+        <div className="container-fluid d-flex justify-content-between flex-row">
+
         <div>
           <img src={Logo} alt="" />
         </div>
@@ -23,8 +53,10 @@ const Navigation = () => {
             <li className="btn">Resume</li>
           </ul>
         </div>
+        </div>
+
       </section>
-      <section className="navIconContainer d-none d-lg-block">
+      <section className="navIconContainer d-none d-lg-block container-fluid">
           <div className="fixed-wrapper">
               <div className="navSticky nav-social ">
               <SocMedIcons position="flex-column" />

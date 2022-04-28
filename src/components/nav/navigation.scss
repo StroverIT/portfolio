@@ -1,15 +1,18 @@
-nav > *{
-    z-index: 1000 ;
-}
-.navTextContainer{
+nav{
+    width: 100%;
     position: fixed;
+    z-index: 1000 ;
     
 }
+
+
 nav > section > *{
     font-size: 0.9rem;
 }
 .navTextContainer {
-    margin: 10px 0;
+    padding: 5px 10px;
+    z-index: 1000 ;
+
 }
 .nav-links ul{
     column-gap: 2rem;
@@ -81,3 +84,15 @@ li a:hover,a:hover{
     filter: brightness(1.5);
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.visible{
+    opacity: 0.25;
+    transition: all 0.2s ease-in;
+    background-color: #fff;
+    div{
+        
+    }
+}
