@@ -5,7 +5,7 @@ import { FiExternalLink} from "react-icons/fi"
 
 import SoftOfficeVideo from "../video/Video";
 
-export default function Project({title, description, technologies, video}) {
+export default function Project({title, description, technologies, video, projectUrl}) {
     const [isStarted, startVideo] = useState(false)
     const text = useRef(null)
     useEffect(()=>{
@@ -29,7 +29,7 @@ export default function Project({title, description, technologies, video}) {
     <li className="project projects-right row">
               <section className=" text   justify-content-center flex-column d-none" ref={text}>
                       <div className="container">
-                          <a className="projects-title title-color">{title}</a>
+                          <a href={projectUrl} className="projects-title title-color">{title}</a>
                           <p className="reading-text-color">
                               {description}
                           </p>
@@ -44,7 +44,7 @@ export default function Project({title, description, technologies, video}) {
                       </div>
                   </section>
                   <section className="image" onMouseEnter={()=> startVideo(true)} onMouseLeave={()=> startVideo(false)}>
-                      <a href="#">
+                      <a href={projectUrl}>
                             <SoftOfficeVideo source={video} />
                       </a>
                   </section>
