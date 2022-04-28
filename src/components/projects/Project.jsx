@@ -10,12 +10,9 @@ export default function Project({title, description, technologies, video, projec
     const text = useRef(null)
     useEffect(()=>{
         if(isStarted){
-            console.log(text.current);
-
             text.current.classList.add("d-none")
         }
         if(!isStarted){
-            console.log(text.current);
             text.current.classList.remove("d-none")
         }
 
