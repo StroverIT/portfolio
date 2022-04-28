@@ -20,7 +20,7 @@ const Projects = () => {
       <p className="reading-text-color">To see demo of the project, hover the image! If you want to see it live, click it!</p>
       <section className="projects-content">
           <ul>
-             <Project title={projects.first.title} description={projects.first.description} technologies={projects.first.technologies} video={softOfficeVideoSource}/>
+             <Project title={projects.first.title} description={projects.first.description} technologies={projects.first.technologies} video={softOfficeVideoSource} projectUrl="#"/>
           </ul>
       </section>
         </section>
