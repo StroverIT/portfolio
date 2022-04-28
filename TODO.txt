@@ -11,7 +11,6 @@ Stack:
 REACT, SCSS
 
 Todo::
-Making interaction on contact page
 On contact page to send to emilzlatinov1@abv.bg
  ADD on selection different color
 Add a to ancors to social media icons
