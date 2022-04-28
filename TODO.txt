@@ -9,7 +9,7 @@ REACT, SCSS
 Todo::
 On contact page to send to emilzlatinov1@abv.bg
  ADD on selection different color
-
+Create hamburger
 Make navbar interactions
 Add animations
 To change from english to BG
