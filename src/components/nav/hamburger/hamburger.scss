@@ -1,0 +1,53 @@
+.header__nav__hamburger {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+    cursor: pointer;
+    // hambuger lines
+    div {
+        width: 25px;
+        height: 3px;
+        margin: 2px;
+        background-color: black;
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    // last hamburger line
+    div:last-child {
+        width: 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+}
+.open {
+    div:first-child {
+        width: 25px;
+        transform: rotate(45deg) translate(5.5px, 4.6px);
+    }
+    div:nth-child(2) {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    div:last-child {
+        width: 25px;
+
+        transform: rotate(-45deg) translate(5.5px, -4.6px);
+    }
+    &__menu{
+        transform:  translateX(-200px);
+        background-color: red;
+        transition: all 0.2s ease-in-out;
+        &__closing{
+        transform:  translateX(-200px);
+
+        }
+    }
+}
