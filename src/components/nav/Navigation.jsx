@@ -46,6 +46,7 @@ const Navigation = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="d-flex nav-links">
+            <Hamburger />
             <NavLinks />
           </div>
         </div>
