@@ -3,7 +3,7 @@ import "./navLinks.scss"
 const Navlinks = () => {
 
     return (
-        <ul className="flex-column flex-md-row align-items-center d-lg-flex">
+        <ul className="nav-links flex-column flex-md-row align-items-center d-lg-flex">
         <li className="secondary-color">
           <a href="#about"><span className="primary-color">01.</span> About</a>
         </li>
