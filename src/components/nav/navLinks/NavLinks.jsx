@@ -1,8 +1,9 @@
 import React from 'react';
-
+import "./navLinks.scss"
 const Navlinks = () => {
+
     return (
-        <ul className="d-flex flex-column flex-md-row align-items-center">
+        <ul className="flex-column flex-md-row align-items-center d-lg-flex">
         <li className="secondary-color">
           <a href="#about"><span className="primary-color">01.</span> About</a>
         </li>
@@ -16,5 +17,4 @@ const Navlinks = () => {
       </ul>
     );
 }
-
 export default Navlinks;
