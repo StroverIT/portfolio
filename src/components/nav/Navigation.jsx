@@ -3,6 +3,7 @@ import "./navigation.scss";
 import Logo from "../../assets/Logo.svg";
 import SocMedIcons from "../icons/SocialMedia";
 import NavLinks from "./NavLinks"
+import Hamburger from "./hamburger/Hamburger";
 
 const Navigation = () => {
   const [show, setShow] = useState(null);
