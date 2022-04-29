@@ -2,13 +2,13 @@ import React, {useState, useEffect} from "react";
 import "./navigation.scss";
 import Logo from "../../assets/Logo.svg";
 import SocMedIcons from "../icons/SocialMedia";
-import NavLinks from "./NavLinks"
+import NavLinks from "./navLinks/NavLinks"
 import Hamburger from "./hamburger/Hamburger";
 
 const Navigation = () => {
+
   const [show, setShow] = useState(null);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [open, setOpen] = useState(false);
   const controlNavbar = ()=>{
     if(window.scrollY <= 20){
       return setShow(null)
@@ -34,7 +34,6 @@ const Navigation = () => {
     if(show ) return "visible"
     if(!show) return "hidden"
   }
-
   return (
     <nav className="">
       <section className={`navTextContainer ${checker()} test`}>
