@@ -23,12 +23,20 @@
 }
 
 .btn {
-  background-color: transparent;
   text-align: center;
   border: 0;
   cursor: pointer;
   border: 1px solid #5ADBFF;
   color: #5ADBFF;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  padding: 5px 20px;
+  transition: background-color 0.4s;
+}
+.btn-outlined:hover {
+  background-color: #3C6997;
 }
 
 .col-1 {
