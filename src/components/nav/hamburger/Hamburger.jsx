@@ -16,12 +16,10 @@ export default function Hamburger() {
   }, [open,hamburger])
 
   return (
-    <>
     <div className="header__nav__hamburger d-lg-none" onClick={open ? () => setOpen(false) : () =>setOpen(true)} ref={hamburger}>
     <div></div>
     <div></div>
     <div></div>
     </div>
-    </>
   )
 }
