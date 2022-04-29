@@ -53,7 +53,7 @@ const Navigation = () => {
             <li className="secondary-color">
               <a href="#contact"><span className="primary-color">03.</span> Contact</a>
             </li>
-            <li className="btn">Resume</li>
+            <li className="btn btn-outlined">Resume</li>
           </ul>
           </div>
         </div>
