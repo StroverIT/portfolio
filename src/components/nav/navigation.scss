@@ -14,9 +14,7 @@ nav > section > *{
     z-index: 1000 ;
 
 }
-.nav-links ul{
-    column-gap: 2rem;
-}
+
 .navIconContainer{
     position:relative; 
 }
@@ -80,8 +78,11 @@ li a:hover,a:hover{
     background-color: var(--secondary-color);
 }
 
-.nav-links{
+.nav-links-container{
     filter: brightness(1.5);
+    ul{
+        column-gap: 2rem;
+    }
 }
 
 .hidden{
