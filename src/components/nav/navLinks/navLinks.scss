@@ -1,8 +1,14 @@
 @use "../../../../sass/abstracts/breakpoints" as *;
+@use "../../../../sass/abstracts/colors" as *;
 .nav-links{
     display:flex;
     justify-content:center;
     align-items:center;
     height: 100%;
     width: 100%;
+    ul li{
+    color: $secondary-color;
+
+ 
+    }
 }
