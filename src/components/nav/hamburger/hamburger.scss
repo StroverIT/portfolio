@@ -1,4 +1,6 @@
+@use "../../../../sass/abstracts/breakpoints" as *;
 .header__nav__hamburger {
+    z-index: 7 !important;
     width: 30px;
     height: 30px;
     padding: 3px;
@@ -41,13 +43,19 @@
 
         transform: rotate(-45deg) translate(5.5px, -4.6px);
     }
-    &__menu{
-        transform:  translateX(-200px);
-        background-color: red;
-        transition: all 0.2s ease-in-out;
-        &__closing{
-        transform:  translateX(-200px);
+    &-menu{
+        width: 50%;
+        transform:  translateX(0vw);
+        @include lg{
+            width: auto;
 
         }
+    }
+}
+.blur{
+    overflow-y: hidden;
+    @include lg{
+    overflow-y: scroll !important;
+
     }
 }
