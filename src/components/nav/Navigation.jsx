@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="container-fluid d-flex justify-content-between flex-row ">
 
         <div>
-          <img src={Logo} alt="" />
+          <a href="/"><img src={Logo} alt="" /></a>
         </div>
         <div className="d-flex align-items-center">
             <Hamburger navigation={navLinks}/>
