@@ -28,10 +28,12 @@ export default function Hamburger({navigation}) {
   }, [open,hamburger])
 
   return (
+    <>
     <div className="header__nav__hamburger d-lg-none" onClick={() => setOpen(!open)} ref={hamburger}>
     <div></div>
     <div></div>
     <div></div>
     </div>
+    </>
   )
 }
