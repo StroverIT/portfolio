@@ -45,8 +45,7 @@
         transform: rotate(-45deg) translate(5.5px, -4.6px);
     }
     &-menu{
-        width: 50%;
-        transform:  translateX(0vw);
+        transform: translateX(0vw);
         @include lg{
             width: auto;
 
