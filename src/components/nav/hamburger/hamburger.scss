@@ -1,4 +1,5 @@
 @use "../../../../sass/abstracts/breakpoints" as *;
+@use "../../../../sass/abstracts/colors" as *;
 .header__nav__hamburger {
     z-index: 7 !important;
     width: 30px;
@@ -16,7 +17,7 @@
         width: 25px;
         height: 3px;
         margin: 2px;
-        background-color: black;
+        background-color:  $primary-color;
 
         transition: all 0.2s ease-in-out;
     }
