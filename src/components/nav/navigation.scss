@@ -1,9 +1,11 @@
 @use "../../../sass/abstracts/breakpoints" as *;
+@use "../../../sass//abstracts/colors" as *;
 
+$cubic-bezier: cubic-bezier(.31,.27,.35,.95);
 nav{
     width: 100%;
     position: fixed;
-    z-index: 1000 ;
+    z-index: 5 ;
     
 }
 
@@ -81,14 +83,25 @@ li a:hover,a:hover{
 }
 
 .nav-links-container{
-  position: absolute;
+    z-index: 6 !important;
+  position: fixed;
+  background-color: $primary-color;
+  height: 100%;
   right: 0;
+  transform: translateX(100vw);
+  transition: transform 0.6s $cubic-bezier, width 0.6s $cubic-bezier;
     filter: brightness(1.5);
       ul{
         column-gap: 2rem;
     }
     @include lg{
         position: relative;
+        height: auto;
+  width: auto;
+
+  background-color: transparent; 
+  transform: translateX(0vw);
+
     }
 }
 
