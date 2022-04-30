@@ -15,3 +15,4 @@ Add animations
 To change from english to BG
 Fix spacing in projects (#work)
 Create resume page
+Fixing navbar black glitch on close
