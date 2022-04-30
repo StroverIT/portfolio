@@ -1,8 +1,8 @@
 @use "../../../../sass/abstracts/breakpoints" as *;
 .nav-links{
-    position: fixed;
-    display: none;
-    @include lg{
-        position: relative;
-    }
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
 }
