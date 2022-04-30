@@ -85,23 +85,23 @@ li a:hover,a:hover{
 .nav-links-container{
     z-index: 6 !important;
   position: fixed;
-  background-color: $bg-color;
+  background-color: $bg-color-lighter;
   height: 100%;
+  width: 55%;
+  top: 0;
   right: 0;
-  transform: translateX(100vw);
-  transition: transform 0.6s $cubic-bezier, width 0.6s $cubic-bezier;
-    filter: brightness(1.5);
+    transform: translateX(100vw);
+    transition: transform 0.6s $cubic-bezier;
+
       ul{
         column-gap: 2rem;
     }
     @include lg{
         position: relative;
         height: auto;
-  width: auto;
-
-  background-color: transparent; 
-  transform: translateX(0vw);
-
+        width: auto;
+        background-color: transparent; 
+        transform: translateX(0vw);
     }
 }
 
