@@ -13,7 +13,8 @@ export default function Hamburger({navigation}) {
     navigation.current.addEventListener("click", linksClick);
       if(open){
         hamburger.current.classList.add("open")
-    navigation.current.classList.add("open-menu")
+        navigation.current.classList.add("open-menu")
+
         document.body.classList.add("blur")
         }else{
           hamburger.current.classList.remove("open")
