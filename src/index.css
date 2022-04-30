@@ -2565,7 +2565,6 @@
   outline: 0;
   border: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 html {
@@ -2596,6 +2595,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(209deg, 86%, 20%);
   counter-reset: section;
+  overflow-x: hidden;
 }
 
 #root {
