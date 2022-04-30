@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import "./navigation.scss";
 import Logo from "../../assets/Logo.svg";
 import SocMedIcons from "../icons/SocialMedia";
@@ -6,7 +6,7 @@ import NavLinks from "./navLinks/NavLinks"
 import Hamburger from "./hamburger/Hamburger";
 
 const Navigation = () => {
-
+  const navLinks = useRef(null)
   const [show, setShow] = useState(null);
   const [lastScrollY, setLastScrollY] = useState(0);
   const controlNavbar = ()=>{
@@ -36,7 +36,7 @@ const Navigation = () => {
   }
   return (
     <nav className="">
-      <section className={`navTextContainer ${checker()} test`}>
+      <section className={`navTextContainer ${checker()}`}>
         <div className={`${show != null && show ? "shadow" : ""}`}>
 
        
@@ -46,9 +46,9 @@ const Navigation = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="d-flex align-items-center">
-            <Hamburger />
+            <Hamburger navigation={navLinks}/>
         </div>
-        <div className="d-flex align-items-center nav-links-container">
+        <div className="d-md-flex align-items-center nav-links-container" ref={navLinks}>
             <NavLinks />
           </div>
         </div>
