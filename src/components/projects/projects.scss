@@ -5,12 +5,15 @@
     .project{
         position: relative;
 
-        height: 500px;
+        height: 100vh;
+        max-height: 500px;
+         max-width: 750px;
+        width: 100vw;
         .image {
             object-fit: contain;
             
             a{
-                filter: brightness(0.1);
+                filter: brightness(0.2);
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -18,7 +21,7 @@
                 left:0;
                 z-index: 2;
                &:hover{
-                filter: brightness(0.5);
+                filter: brightness(1);
 
                }
             }
@@ -41,41 +44,41 @@
     }
 
     &-content{
-       
         p{
-            @include lg{
+            max-width: 600px;
                 color:$secondary-color;
-                filter: brightness(1.5);
+                filter: brightness(2.1);
                 background-color:  $bg-color;
-            }
+            padding: 15px 20px;
+            @include md{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
 
+            }
         }
         
     }
   
-   &-right{
-       @include lg{
-            text-align: right;
-       }
-   }
+  
 }
 .icons{
+    margin-top: 7px;
     display: inline-flex;
     cursor: pointer;
-    &__right a{
-        @include lg{
+    a+a{
             padding-left: 10px;
-        }
     }
 }
 .technologies{
-    
-    &-left li{
+    padding-top: 20px;
+    li{
         display: inline-flex;
-        @include lg{
-        padding-left:  10px;
-
-        }
+       
     }
+    li+li{
+            padding-left: 10px;
+    }
+    
+  
    
 }
