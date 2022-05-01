@@ -11,7 +11,8 @@ const Projects = () => {
             title: "SoftOffice",
             description: `My first deployed e-commerce website. It was fully made from me end to end project for my friend's "client".`,
             technologies: ["Nginx", "MongoDB", "NodeJS", "Express", "Bootstrap", "Jquery"],
-            projectUrl: "https://www.softoffice.bg/"
+            projectUrl: "https://www.softoffice.bg/",
+            gitUrl: "https://github.com/StR0vErBG/softoffice"
         }
     }
    
@@ -21,7 +22,7 @@ const Projects = () => {
       <p className="reading-text-color mt-1 mb-1 ">To see demo of the project, hover the image! If you want to see it live, click it!</p>
       <section className="projects-content">
           <ul>
-             <Project title={projects.first.title} description={projects.first.description} technologies={projects.first.technologies} video={softOfficeVideoSource} projectUrl={projects.first.projectUrl}/>
+             <Project title={projects.first.title} description={projects.first.description} technologies={projects.first.technologies} video={softOfficeVideoSource} projectUrl={projects.first.projectUrl} gitUrl={projects.first.gitUrl}/>
           </ul>
       </section>
         </section>
