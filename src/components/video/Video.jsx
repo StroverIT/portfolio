@@ -18,7 +18,7 @@ const Video = ({source}) => {
  
     return (
         <div className="video-box" >
-            <video src={source} type="video/mkv" loop ref={videoRef} onMouseEnter={()=> setStart(true)} onMouseLeave={()=> setStart(false)}>
+            <video src={source} type="video/mp4" loop ref={videoRef} onMouseEnter={()=> setStart(true)} onMouseLeave={()=> setStart(false)}>
             </video>
         </div>
        
