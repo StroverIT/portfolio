@@ -10,7 +10,5 @@ Todo::
 On contact page to send to emilzlatinov1@abv.bg
  ADD on selection different color
 Add animations
- Create better video for softOffice
-id  go to that section on load react
 To change from english to BG
 Create resume page
