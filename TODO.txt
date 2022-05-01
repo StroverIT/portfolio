@@ -9,10 +9,8 @@ REACT, SCSS
 Todo::
 On contact page to send to emilzlatinov1@abv.bg
  ADD on selection different color
-Make navbar interactions
 Add animations
  Create better video for softOffice
 id  go to that section on load react
 To change from english to BG
-Fix spacing in projects (#work)
 Create resume page
