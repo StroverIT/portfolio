@@ -24,13 +24,13 @@ export default function Project({title, description, technologies, video, projec
     }
   return (
     <li className="project projects-right row">
-              <section className=" text   justify-content-center flex-column d-none" ref={text}>
+              <section className="text justify-content-center flex-column d-none" ref={text}>
                       <div className="container">
                           <a href={projectUrl} className="projects-title title-color">{title}</a>
                           <p className="reading-text-color">
                               {description}
                           </p>
-                          <ul className="technologies-left reading-text-color">
+                          <ul className="technologies reading-text-color">
                               {showTechs(technologies)}
                                
                           </ul>
