@@ -5,7 +5,7 @@ import { FiExternalLink} from "react-icons/fi"
 
 import SoftOfficeVideo from "../video/Video";
 
-export default function Project({title, description, technologies, video, projectUrl}) {
+export default function Project({title, description, technologies, video, projectUrl, gitUrl}) {
     const [isStarted, startVideo] = useState(false)
     const text = useRef(null)
     useEffect(()=>{
@@ -35,8 +35,8 @@ export default function Project({title, description, technologies, video, projec
                                
                           </ul>
                           <section className="icons icons__right reading-text-color">
-                                <a><BsGithub /></a>
-                                <a><FiExternalLink /></a>
+                                <a href={gitUrl}><BsGithub /></a>
+                                <a href={projectUrl}><FiExternalLink /></a>
                           </section>
                       </div>
                   </section>
