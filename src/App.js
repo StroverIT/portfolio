@@ -13,15 +13,12 @@ function App() {
 
   useEffect(()=>{
     if(hash){
-      console.log(hash);
       const item = document.querySelector(hash)
-      console.log(item);
       if(item){
-          
-          item.scrollIntoView({behavior: "smooth"} )
+          item.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
   }
-  }, [window])
+  }, [window.onload])
 
 
   return (
