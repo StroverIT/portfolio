@@ -64,46 +64,48 @@ $padding-num: 5;
                 text-align: start !important;
             }
     }
-    @for $i from 0 through $padding-num{
-        .pt-#{$i}{
-            padding-bottom: $i * 1rem;
+  
+}
+@for $i from 0 through $padding-num{
+    .pt-#{$i}{
+        padding-top: $i * 1rem;
+    }
+    .pb-#{$i}{
+        padding-bottom: $i * 1rem;
+    }
+    .mt-#{$i}{
+        margin-top: $i * 1rem;
+    }
+    .mb-#{$i}{
+        margin-bottom: $i * 1rem;
+    }
+    .ml-#{$i}{
+        margin-left: $i * 1rem;
+    }
+    @each $key, $value in breakpoints.$breakpoints{
+    @media (min-width: $value){
+        
+        .pt-#{$key}-#{$i}{
+            padding-top: $i * 1rem ;
         }
-        .pb-#{$i}{
-            padding-bottom: $i * 1rem;
+        .pb-#{$key}-#{$i}{
+            padding-bottom: $i * 1rem ;
         }
-        .mt-#{$i}{
-            margin-top: $i * 1rem;
+        .mt-#{$key}-#{$i}{
+            margin-top: $i * 1rem !important;
         }
-        .mb-#{$i}{
+        .mb-#{$key}-#{$i}{
             margin-bottom: $i * 1rem;
         }
-        .ml-#{$i}{
+        .my-#{$key}-#{$i}{
+            margin-top: $i * 1rem;
+            margin-bottom: $i * 1rem;
+        }
+        .mx-#{$key}-#{$i}{
             margin-left: $i * 1rem;
+            margin-right: $i * 1rem;
         }
-        @media (min-width: $value){
-            
-            .pt-#{$key}-#{$i}{
-                padding-top: $i * 1rem ;
-            }
-            .pb-#{$key}-#{$i}{
-                padding-bottom: $i * 1rem ;
-            }
-            .mt-#{$key}-#{$i}{
-                margin-top: $i * 1rem !important;
-            }
-            .mb-#{$key}-#{$i}{
-                margin-bottom: $i * 1rem;
-            }
-            .my-#{$key}-#{$i}{
-                margin-top: $i * 1rem;
-                margin-bottom: $i * 1rem;
-            }
-            .mx-#{$key}-#{$i}{
-                margin-left: $i * 1rem;
-                margin-right: $i * 1rem;
-            }
-           
-        }
-        
     }
+    }
+    
 }
