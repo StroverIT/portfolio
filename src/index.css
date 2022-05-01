@@ -11,7 +11,7 @@
 }
 
 .secondary-color {
-  color: #3C6997;
+  color: hsl(210deg, 43%, 41%);
 }
 
 .title-color {
@@ -36,7 +36,7 @@
   transition: background-color 0.4s;
 }
 .btn-outlined:hover {
-  background-color: #3C6997;
+  background-color: hsl(210deg, 43%, 41%);
 }
 
 .col-1 {
@@ -2585,8 +2585,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #3C6997;
-  border: 3px solid #3C6997;
+  background-color: hsl(210deg, 43%, 41%);
+  border: 3px solid hsl(210deg, 43%, 41%);
   scrollbar-width: thin;
   border-radius: 10px;
 }
@@ -2631,7 +2631,7 @@ body {
   top: 50%;
   margin-left: 10px;
   width: 100%;
-  background-color: #3C6997;
+  background-color: hsl(210deg, 43%, 41%);
   height: 1px;
   display: inline-block;
 }
