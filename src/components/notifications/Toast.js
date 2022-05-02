@@ -8,9 +8,16 @@ const options = {
   className: '',
   position: toast.POSITION.TOP_RIGHT,
 };
-
+const promiseOptions = {
+  autoClose: 2000,
+  className: '',
+  position: toast.POSITION.TOP_RIGHT,
+  duration: Infinity,
+};
+export const toastPromise = message =>{
+    toast.info(message, promiseOptions)
+}
 export const toastSuccess = message => {
-  console.log("Hello0 success toast")
   toast.success(message, options);
 }
 
