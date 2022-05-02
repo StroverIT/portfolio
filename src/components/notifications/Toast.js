@@ -11,7 +11,7 @@ const options = {
 const promiseOptions = {
   autoClose: -1,
   className: '',
-  position: toast.POSITION.TOP_RIGHT,
+  position: toast.POSITION.TOP_CENTER,
 };
 export const toastPromise = message =>{
     toast.loading(message, promiseOptions)
