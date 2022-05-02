@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./form.scss";
 
 import axios from 'axios';
+
 const url = "http://localhost:8022/contactUs"
 export default function Form() {
   const [message, setMessage] = useState(null)
@@ -19,6 +20,7 @@ export default function Form() {
         data: formData
       }).then(res=>{
         console.log(res);
+        setMessage(res.data)
       })
 
 
