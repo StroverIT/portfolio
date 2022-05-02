@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./form.scss";
-import {toastError, toastSuccess,toastPromise} from "../../notifications/Toast"
-
+import {toastError, toastSuccess,toastPromise, toastHideAll} from "../../notifications/Toast"
 
 import axios from 'axios';
 
@@ -9,10 +8,12 @@ const url = "http://localhost:8022/contactUs"
 export default function Form() {
 
   const [message, setMessage ] = useState(null)
+  const currentForm = useRef(null)
 
   function handleForm(e) {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target));
+    toastPromise("Pending...")
     axios.request({
       method: "POST",
       url,
@@ -20,11 +21,19 @@ export default function Form() {
         "Content-Type": "application/json"
       },
       data: formData
+    }).then(res=> {
+      setMessage(res.data)
+     currentForm.current.reset()
     })
    
   }
   useEffect(() => {
-  
+
+    if(message){
+      toastHideAll()
+      console.log(message);
+      toastSuccess(message.messageEN)
+    }
   }, [message]);
 
   return (
@@ -32,6 +41,7 @@ export default function Form() {
       action="form d-flex flex-row form col-12"
       method="POST"
       onSubmit={handleForm}
+      ref={currentForm}
     >
       <div className="d-flex">
         <input type="name" placeholder="Full name" name="user" required/>
