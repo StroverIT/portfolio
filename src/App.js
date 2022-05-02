@@ -7,6 +7,10 @@ import Footer from "./components/footer/Footer"
 
 import "./index.css"
 import { useEffect } from "react"
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const currentUrl = new URL(window.location.href)
   const hash = currentUrl.hash
@@ -32,6 +36,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    <ToastContainer />
     </>
   );
 }
