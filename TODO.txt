@@ -7,7 +7,6 @@ Stack:
 REACT, SCSS
 
 Todo::
-On contact page to send to emilzlatinov1@abv.bg
  ADD on selection different color
 Add animations
 To change from english to BG
