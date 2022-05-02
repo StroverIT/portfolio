@@ -11,4 +11,3 @@ Todo::
 Add animations
 To change from english to BG
 Create resume page
-Add message when is send on form 
