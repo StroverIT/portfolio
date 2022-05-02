@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./form.scss";
 import {toastError, toastSuccess,toastPromise} from "../../notifications/Toast"
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 import axios from 'axios';
 
