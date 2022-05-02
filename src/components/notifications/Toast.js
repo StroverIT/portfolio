@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 toast.configure()
 
 const options = {
-  autoClose: 2000,
+  autoClose: 4000,
   className: '',
   position: toast.POSITION.TOP_RIGHT,
 };
@@ -14,7 +14,10 @@ const promiseOptions = {
   position: toast.POSITION.TOP_RIGHT,
 };
 export const toastPromise = message =>{
-    toast.info(message, promiseOptions)
+    toast.loading(message, promiseOptions)
+}
+export const toastHideAll = ()=>{
+    toast.dismiss();  
 }
 export const toastSuccess = message => {
   toast.success(message, options);
