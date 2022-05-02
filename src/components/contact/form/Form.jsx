@@ -32,7 +32,7 @@ export default function Form() {
     if(message){
       toastHideAll()
       console.log(message);
-      toastSuccess(message.messageEN)
+      toastSuccess(message.messageE)
     }
   }, [message]);
 
