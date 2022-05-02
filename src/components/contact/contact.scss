@@ -1,4 +1,9 @@
 @use "../../../sass/abstracts/colors" as *;
+.title{
+    &:after{
+        width: 0 !important;
+    }
+}
 .titleNext{
     height:100%;
 }
