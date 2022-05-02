@@ -1,34 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./form.scss";
+import {toastError, toastSuccess,toastPromise} from "../../notifications/Toast"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios';
 
 const url = "http://localhost:8022/contactUs"
 export default function Form() {
-  const [message, setMessage] = useState(null)
+
+  const [message, setMessage ] = useState(null)
 
   function handleForm(e) {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target));
-    console.log(formData);
-      axios.request({
-        method: "POST",
-        url,
-        headers: {
-          "Content-Type": "application/json"
-        },
-        data: formData
-      }).then(res=>{
-        console.log(res);
-        setMessage(res.data)
-      })
-
-
+    axios.request({
+      method: "POST",
+      url,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      data: formData
+    })
    
   }
-  useEffect(()=>{
-    console.log(message);
-},[message])
+  useEffect(() => {
+  
+  }, [message]);
+
   return (
     <form
       action="form d-flex flex-row form col-12"
