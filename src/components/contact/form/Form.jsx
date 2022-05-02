@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./form.scss";
 
 import axios from 'axios';
-
+const url = "http://localhost:8022/contactUs"
 export default function Form() {
   const [message, setMessage] = useState(null)
 
@@ -12,7 +12,7 @@ export default function Form() {
     console.log(formData);
       axios.request({
         method: "POST",
-        url: "http://localhost:8022/contactUs",
+        url,
         headers: {
           "Content-Type": "application/json"
         },
