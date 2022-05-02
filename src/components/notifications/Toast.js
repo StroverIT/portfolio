@@ -9,10 +9,9 @@ const options = {
   position: toast.POSITION.TOP_RIGHT,
 };
 const promiseOptions = {
-  autoClose: 2000,
+  autoClose: -1,
   className: '',
   position: toast.POSITION.TOP_RIGHT,
-  duration: Infinity,
 };
 export const toastPromise = message =>{
     toast.info(message, promiseOptions)
