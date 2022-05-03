@@ -4,7 +4,7 @@ import {toastError, toastSuccess,toastPromise, toastHideAll} from "../../notific
 
 import axios from 'axios';
 
-const url = "http://localhost:8022/contactUs"
+const url = "http://164.138.217.83:1022/contactUs"
 export default function Form() {
 
   const [message, setMessage ] = useState(null)
@@ -24,6 +24,11 @@ export default function Form() {
     }).then(res=> {
       setMessage(res.data)
      currentForm.current.reset()
+    }).catch(e=>{
+        setMessage({error: {
+          en: "Something went wrong!",
+          bg: "Нещо се обърка!!"
+        }})
     })
    
   }
@@ -31,7 +36,9 @@ export default function Form() {
 
     if(message){
       toastHideAll()
-      console.log(message);
+      if(message.error){
+        return toastError(message.error.en)
+      }
       toastSuccess(message.messageEn)
     }
   }, [message]);
