@@ -12,3 +12,8 @@ Add animations
 To change from english to BG
 Create resume page
 Logic if message is BG or EN in form
+
+https://youtu.be/DbREUJNgxqw?t=2931
+Mixed Content: The page at 'https' was 
+loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http'. 
+This request has been blocked; the content must be served over HTTPS.
