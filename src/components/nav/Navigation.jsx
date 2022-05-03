@@ -63,7 +63,7 @@ const Navigation = () => {
           </div>
           <div className="fixed-wrapper fixed-wrapper-right">
               <div className="navSticky nav-email d-flex flex-column ">
-                <a className="d-flex justify-content-center align-content-center secondary-color" href="#">emilzlatinov1@abv.bg</a>
+                <a className="d-flex justify-content-center align-content-center secondary-color" href="#contact">emilzlatinov1@abv.bg</a>
               </div>
           </div>
       </section>
