@@ -17,3 +17,7 @@ https://youtu.be/DbREUJNgxqw?t=2931
 Mixed Content: The page at 'https' was 
 loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http'. 
 This request has been blocked; the content must be served over HTTPS.
+
+Bugs:
+On project there is text back to you on mobile
+Fix the font size on mobile version
