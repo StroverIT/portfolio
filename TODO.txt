@@ -12,4 +12,3 @@ Add animations
 To change from english to BG
 Create resume page
 Logic if message is BG or EN in form
-Social medias icons to be target="_blank"
