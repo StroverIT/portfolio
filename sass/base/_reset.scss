@@ -44,6 +44,9 @@ body{
     counter-reset: section;
     overflow-x: hidden;
 }
+::selection {
+  background-color: $secondary-color-darker;
+}
 #root{
     position: relative;
 }
