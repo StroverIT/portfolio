@@ -4,7 +4,7 @@ import {toastError, toastSuccess,toastPromise, toastHideAll} from "../../notific
 
 import axios from 'axios';
 
-const url = "http://164.138.217.83:1022/contactUs"
+const url = "https://164.138.217.83:1022/contactUs"
 export default function Form() {
 
   const [message, setMessage ] = useState(null)
