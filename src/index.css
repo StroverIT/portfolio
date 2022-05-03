@@ -2118,6 +2118,10 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background-color: hsl(210deg, 43%, 30%);
+}
+
 #root {
   position: relative;
 }
