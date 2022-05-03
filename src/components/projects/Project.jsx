@@ -35,13 +35,13 @@ export default function Project({title, description, technologies, video, projec
                                
                           </ul>
                           <section className="icons icons__right reading-text-color">
-                                <a href={gitUrl}><BsGithub /></a>
-                                <a href={projectUrl}><FiExternalLink /></a>
+                                <a href={gitUrl} target="_blank"><BsGithub /></a>
+                                <a href={projectUrl} target="_blank"><FiExternalLink /></a>
                           </section>
                       </div>
                   </section>
                   <section className="image" onMouseEnter={()=> startVideo(true)} onMouseLeave={()=> startVideo(false)}>
-                      <a href={projectUrl}>
+                      <a href={projectUrl} target="_blank">
                             <SoftOfficeVideo source={video} />
                       </a>
                   </section>
