@@ -10,7 +10,7 @@ Todo::
  ADD on selection different color
 Add animations
 To change from english to BG
-Create resume page
+Create resume page (get it from jobs.bg cv html download)
 Logic if message is BG or EN in form
 
 https://youtu.be/DbREUJNgxqw?t=2931
