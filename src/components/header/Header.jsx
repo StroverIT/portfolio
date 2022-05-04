@@ -14,7 +14,7 @@ export default function Header() {
        <h1 className="reading-text-color big-title">I build things for the web.</h1>
      </div>
      <div className="col-sm-7 mt-1">
-       <p className="reading-text-color ">I'm a software engineer specializing in building (and occasionally designing). I'm focused on builing my web and social skills.</p>
+       <p className="reading-text-color text-center text-sm-left">I'm a software engineer specializing in building (and occasionally designing). I'm focused on builing my web and social skills.</p>
      </div>
     </header>
   )
