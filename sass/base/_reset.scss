@@ -48,5 +48,7 @@ body{
   background-color: $secondary-color-darker;
 }
 #root{
+  overflow-x: hidden;
+
     position: relative;
 }
