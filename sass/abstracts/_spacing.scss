@@ -43,9 +43,7 @@
 .align-content-center{
     align-content: center;
 }
-.text-center{
-    text-align: center;
-}
+
 $padding-num: 5;
 
 @each $key, $value in breakpoints.$breakpoints{
