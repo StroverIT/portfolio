@@ -1,6 +1,8 @@
 
 @use "../abstracts/colors" as *;
 @use "../abstracts/breakpoints" as *;
+@use "sass:math";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 .bigger-text{
     font-size: 1.25rem;
@@ -9,10 +11,16 @@
     position: relative;
 }
 .bigger-title{
+    font-size: 1.25rem;
+    @include lg{
     font-size: 2.25rem;
+      
+    }
 }
 .big-title{
-    font-size: 3.5rem;
+    font-size: clamp(1.25rem, 5vw + 1rem, 3.5rem);
+
+    // font-size: 3.5rem;
 }
 
 .title::before{
