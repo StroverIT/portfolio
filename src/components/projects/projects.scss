@@ -1,6 +1,7 @@
 @use "../../../sass/abstracts/colors" as *;
 @use "../../../sass/abstracts/breakpoints" as *;
 .projects{
+    min-height: 100vh;
     
     .project{
         position: relative;
@@ -33,7 +34,6 @@
             z-index: 3;
         }
     }
-    height: 80vh;
     &-title{
         font-weight: 700;
         font-size: 1.5rem;
