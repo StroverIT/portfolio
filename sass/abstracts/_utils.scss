@@ -25,6 +25,15 @@
 .order-3{
     order: 3;
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: center;
+}
+.text-right{
+    text-align: center;
+}
 $padding-num: 5;
 @each $key, $value in breakpoints.$breakpoints{
 
@@ -36,6 +45,19 @@ $padding-num: 5;
         }
         
     }
+    @media (min-width: $value){
+        .text-#{$key}-left{
+            text-align: left;
+        }
+        .text-#{$key}-center{
+            text-align: left;
+        }
+        .text-#{$key}-right{
+            text-align: left;
+        }
+    }
+
+  
     .order-#{$key}-1{
         @media (min-width: $value){
             order: 1;
