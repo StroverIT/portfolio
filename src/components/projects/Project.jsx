@@ -6,8 +6,11 @@ import { FiExternalLink} from "react-icons/fi"
 import SoftOfficeVideo from "../video/Video";
 
 export default function Project({title, description, technologies, video, projectUrl, gitUrl}) {
+    
     const [isStarted, startVideo] = useState(false)
+
     const text = useRef(null)
+
     useEffect(()=>{
         if(isStarted){
             text.current.classList.add("d-none")
