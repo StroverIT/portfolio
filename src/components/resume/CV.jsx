@@ -17,13 +17,16 @@ const Cv = () =>{
 					<img src={Me} alt="It's me" />
 					</div>
 					<section>
+						<div className="container-sm-fluid">
+						<p className="mx-2 text-center text-sm-left myName">Емил Руменов Златинов</p>
+					<ul >
+						<li>Email: <b>emilzlatinov1@abv.bg</b> </li>
 
-					<p className="mx-2 text-center myName">Емил Руменов Златинов</p>
-					<ul className="container-sm">
-						<li>Email: <b>xcreaw1@abv.bg</b> или <b>emilzlatinov1@abv.bg</b></li>
 						<li>Телефон: <b>0876237725</b></li>
 						<li>Адрес за кореспонденция: <b>Дружба 2 блок 321</b></li>
 					</ul>
+						</div>
+				
 					</section>
 
 			</section>
