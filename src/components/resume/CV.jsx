@@ -11,15 +11,21 @@ const Cv = () =>{
 	return(
 		<>
 		<Navcv />
-		<div className="container">
-			<section className="d-md-flex">
+		<div className="container cv-container">
+			<section className="d-sm-flex">
+					<div className="d-flex justify-content-center">
 					<img src={Me} alt="It's me" />
-					<p className="mx-2">Емил Руменов Златинов</p>
-					<ul>
+					</div>
+					<section>
+
+					<p className="mx-2 text-center myName">Емил Руменов Златинов</p>
+					<ul className="container-sm">
 						<li>Email: <b>xcreaw1@abv.bg</b> или <b>emilzlatinov1@abv.bg</b></li>
 						<li>Телефон: <b>0876237725</b></li>
 						<li>Адрес за кореспонденция: <b>Дружба 2 блок 321</b></li>
 					</ul>
+					</section>
+
 			</section>
 			<section>
 				<h4>Лична информация</h4>
@@ -29,7 +35,7 @@ const Cv = () =>{
 					<li>Презиме: <b>Руменов</b></li>
 					<li>Фамилия: <b>Златинов</b></li>
 					<li>Гражданство: <b>Българско</b></li>
-					<li>В момента живея в: София/България</li>
+					<li>В момента живея в: <b>София/България</b></li>
 				</ul>
 			</section>
 			<section>
@@ -53,7 +59,7 @@ const Cv = () =>{
 				</ul>
 			</section>
 			<section>
-			Допълнителни курсове и Сертификати: В момента съм на web module в SoftUni. Като всички предишни модули съм ги минал с пълен и отличен 6
+			Допълнителни курсове и Сертификати: <b>В момента съм на web module в SoftUni. Като всички предишни модули съм ги минал с пълен и отличен 6</b>
 			</section>
 		</div>
 		</>
