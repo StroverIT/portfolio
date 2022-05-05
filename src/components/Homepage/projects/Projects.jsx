@@ -1,6 +1,6 @@
 import "./projects.scss"
 
-import softOfficeVideoSource from "../../assets/videos/softOffice.mp4"
+import softOfficeVideoSource from "../../../assets/videos/softOffice.mp4"
 
 import Project from './Project';
 

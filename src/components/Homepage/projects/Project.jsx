@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import {  BsGithub } from "react-icons/bs";
 import { FiExternalLink} from "react-icons/fi"
 
-import SoftOfficeVideo from "../video/Video";
+import SoftOfficeVideo from "../../video/Video";
 
 export default function Project({title, description, technologies, video, projectUrl, gitUrl}) {
     
