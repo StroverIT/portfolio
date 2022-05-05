@@ -80,7 +80,6 @@ $padding-num: 5;
     .ml-#{$i}{
         margin-left: $i * 1rem;
     }
-    @each $key, $value in breakpoints.$breakpoints{
     @media (min-width: $value){
         
         .pt-#{$key}-#{$i}{
@@ -103,7 +102,6 @@ $padding-num: 5;
             margin-left: $i * 1rem;
             margin-right: $i * 1rem;
         }
-    }
     }
     
 }
