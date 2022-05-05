@@ -9,7 +9,6 @@ const Navcv = () => {
             <Link to="/">
 		            <AiOutlineArrowLeft className="icon"/>
             </Link>
-            
         </div>
     );
 }
