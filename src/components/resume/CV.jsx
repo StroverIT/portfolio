@@ -4,9 +4,11 @@ import "./cv.scss"
 
 const Cv = () =>{
 	return(
+		<>
 		<div className="container">
 			Dadsas
 			</div>
+			</>
 	)
 }
 
