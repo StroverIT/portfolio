@@ -1,10 +1,7 @@
-import Header from "./components/header/Header"
 import Nav from "./components/nav/Navigation"
-import About from "./components/about/About"
-import Projects from "./components/projects/Projects"
-import Contact from "./components/contact/Contact"
+import Homepage from "./components/Homepage/Homepage"
+import Cv from "./components/resume/Cv"
 import Footer from "./components/footer/Footer"
-import CV from "./components/resume/CV"
 
 import "./index.css"
 import { useEffect } from "react"
@@ -31,21 +28,15 @@ function App() {
     
     <>
       <Nav/>
-    <div className="container">
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+    
     <Routes>
-          <Route path="/cv">
-            <CV />
-          </Route>
-       
-         
+            <Route path="/" element={<Homepage />} />
+            <Route path="/cv" element={<Cv />}/>
+     
         </Routes>
-    <ToastContainer />
+        </Router>
+        <ToastContainer />
     </>
   );
 }
