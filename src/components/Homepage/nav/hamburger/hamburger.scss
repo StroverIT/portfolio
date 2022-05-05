@@ -1,0 +1,71 @@
+@use "../../../../../sass/abstracts/breakpoints" as *;
+@use "../../../../../sass/abstracts/colors" as *;
+.header__nav__hamburger {
+    z-index: 7 !important;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+    cursor: pointer;
+    // hambuger lines
+    div {
+        width: 25px;
+        height: 3px;
+        margin: 2px;
+        background-color:  $primary-color;
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    // last hamburger line
+    div:last-child {
+        width: 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+}
+.open {
+    div:first-child {
+        width: 25px;
+        transform: rotate(45deg) translate(5.5px, 4.6px);
+    }
+    div:nth-child(2) {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    div:last-child {
+        width: 25px;
+
+        transform: rotate(-45deg) translate(5.5px, -4.6px);
+    }
+    &-menu{
+        transform: translateX(0vw);
+        @include lg{
+            width: auto;
+
+        }
+    }
+}
+.blur{
+    overflow-y: hidden;
+    @include lg{
+    overflow-y: scroll !important;
+
+    }
+}
+.blury-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 6;
+}
