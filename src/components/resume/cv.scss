@@ -1,0 +1,25 @@
+@use "../../../sass/abstracts/colors" as *;
+
+.cv-container{
+    color: $primary-color;
+    .myName{
+        font-size: 1.5rem;
+    }
+    b{
+    color: $secondary-color-lighter;
+    }
+    h4{
+    color: $primary-color-dark;
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    ul{
+        margin-top: 10px;
+    }
+    hr{
+        background-color:$primary-color;
+        width: 100%;
+        height: 2px;
+    }
+}
