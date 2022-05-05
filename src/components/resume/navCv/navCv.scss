@@ -1,0 +1,9 @@
+@use "../../../../sass/abstracts/colors" as *;
+
+.navCv{
+    .icon{
+        font-size: 1.5rem;
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
