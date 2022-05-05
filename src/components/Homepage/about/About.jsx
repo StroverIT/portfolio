@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import Me from "../../assets/betterMe.jpg";
+import Me from "../../../assets/betterMe.jpg";
 
 
 export default function About() {
