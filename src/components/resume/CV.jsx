@@ -4,7 +4,9 @@ import "./cv.scss"
 
 const Cv = () =>{
 	return(
-		<div>Dadsas</div>
+		<div className="container">
+			Dadsas
+			</div>
 	)
 }
 
