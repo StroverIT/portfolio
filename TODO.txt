@@ -19,3 +19,5 @@ loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http'.
 This request has been blocked; the content must be served over HTTPS.
 Bug:
    Netlify: React-dom-production
+
+Change Resume to be in EN and add the new features !
